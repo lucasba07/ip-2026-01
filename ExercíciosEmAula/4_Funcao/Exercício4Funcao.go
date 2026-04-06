@@ -5,7 +5,7 @@ func main() {
 	var num float64
 	fmt.Print("Informe um número qualquer: ")
 	fmt.Scan(&num)
-	fmt.Printf("o fatorial de %v é: %.2f", num, fatorial(num))
+	fmt.Printf("o fatorial de %v é: %.2f\n", num, fatorial(num))
 }
 
 func fatorial (x float64) float64 {
