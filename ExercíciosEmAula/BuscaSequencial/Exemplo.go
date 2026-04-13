@@ -15,9 +15,9 @@ func main() {
 	fmt.Scanln(&valor)
 	
 	if buscaSequencial(lista, valor) == -1 {
-		fmt.Println("Valor não encontrado na lista, portanto retornou o valor", buscaSequencial(lista, valor))
+		fmt.Println("Valor não encontrado na lista, portanto retornou o valor ", buscaSequencial(lista, valor))
 	} else {
-		fmt.Println("O elemento está na posição", buscaSequencial(lista, valor))
+		fmt.Println("O elemento está na posição ", buscaSequencial(lista, valor))
 	}	
 }
 
