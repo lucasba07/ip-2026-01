@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao HTML</title>
+</head>
+<body>
+    <h1>Introdução ao HTML</h1>
+    <h2>Tags</h2>
+    <p>Todo o arquivo HTML é composto por tags, as tags podem ser de dois tipo, abertura e fechamento ou de fechamento automático</p>
+    <p>Abertura e fechamento: para declarar uma tag de abertura e fechamento, deve-se fazer o seguinte: &lt;tag&gt; conteúdo da tag&lt;/tag&gt;</p>
+    <p>Fechamendo automático: para declarar uma tag de fechamento automa1tico, deve-se fazer o seguinte: &lt;tag/&gt;</p>
+    <h2>Elementos comuns no HTML</h2>
+    <h3>Títulos</h3>
+    <p>O HTML possui 6 títulos, do h1 até o h6. Sendo h1 o maior e h6 o menor</p>
+    <p>Para se declarar um título x, basta usar a tag &lt;hx&gt;Título&lt;/hx&gt;</p>
+    <h3>Parágrafo</h3>
+    <p>Para se declara um parágrafo no HTML, deve-se utilizar a tag &lt;p&gt;Conteúdo do parágrafo&lt;/p&gt;</p>
+    <h3>Divs</h3>
+    <p>Uma div é um contâiner para outros elementos</p>
+    <p>Para se declara uma div no HTML, deve-se utilizar a tag &lt;div&gt;Conteúdo da div&lt;/div&gt;</p>
+    <p>Por exemplo:</p>
+    <pre>
+        &lt;div&gt;
+        &lt;h1&gt;Lorem ipsum&lt;/h1&gt;
+        &lt;p&gt;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum eius nobis placeat minima sint sapiente saepe quas
+        magnam est, asperiores in magni debitis excepturi voluptate ipsum sunt unde hic deleniti?&lt;/p&gt;
+        &lt;button&gt;Lorem&lt;/button&gt;
+        &lt;/div&gt;
+    </pre>
+    <h3>Botões</h3>
+    <p>Para se declarar um botão, basta usar a tag &lt;button&gt;Texto do botão&lt;/button&gt;</p>
+    <p>Botões tem alguns atributos disponíveis, os princiapis são "onClick" e "type"</p>
+    <p>O atributo onClick define a função que será executada assim que o botão for pressinado <sub>Esta função geralmente é escrita em JavaScript</sub></p>
+    <p>O atributo type define o tipo do botão, podendo ser "button", "menu", "submit" ou "reset"</p>
+    <button>Botão</button>
+    <h3>Links</h3>
+    <p>Para se declarar um link, basta usar a tag &lt;a href="url-do-link"&gt;Texto do link&lt;/a&gt;</p>
+    <sub>Obs.: Diferentemete dos atributos "onClick" e "type" dos botões que são opcionais, o atributo href numa tag âncora é essencial para o funcionamento</sub>
+    <br>
+    <a href="https://www.google.com">Google</a>
+    <p>A tag a tem um atributo opcional chamado "target", quando este recebe "_blank", o link é aberto em uma nova página do navegador</p>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <h3>Formulários</h3>
+    <p>Formulários são como caixas organizadoras para inputs</p>
+    <p>Obs.: Num formulário, caso haja botões sem o atributo type definido, eles são tratados como botões de type="submit" e enviam automaticamente o formulário em caso de clique</p>
+    <p>O formulário tem um atributo opcional chamado action, ele diz para onde os dados serão enviados.</p>
+    <p>Para se declarar um formulário, basta usar a tag &lt;form&gt;Conteúdo do formulário&lt;/form&gt;</p>
+    <p>Por exemplo:</p>
+    <pre>
+        &lt;form&gt;
+        &lt;input type="text" placeholder="Digite seu nome aqui"/&gt;
+        &lt;button&gt;Enviar&lt;/button&gt;
+        &lt;/form&gt;
+    </pre>
+    <p>Este código gera o seguinte:</p>
+    <form>
+        <input type="text" placeholder="Digite seu nome aqui"/>
+        <button>Enviar</button>
+    </form>
+    <h3>Inputs</h3>
+    <p>Para se declarar um input, basta usar a tag &lt;input type="tipo" placeholder="Lorem"/&gt;</p>
+    <p>O placeholder serve para definir um texto para o input</p>
+    <p>O tipo do input pode ser:</p>
+    <ul>
+        <li>
+            button
+        </li>
+        <li>
+            checkbox
+        </li>
+        <li>
+            color
+        </li>
+        <li>
+            date
+        </li>
+        <li>
+            datetime-local
+        </li>
+        <li>
+            email
+        </li>
+        <li>
+            file
+        </li>
+        <li>
+            hidden
+        </li>
+        <li>
+            image
+        </li>
+        <li>
+            month
+        </li>
+        <li>
+            number
+        </li>
+        <li>
+            password
+        </li>
+        <li>
+            radio
+        </li>
+        <li>
+            range
+        </li>
+        <li>
+            reset    
+        </li>
+        <li>
+            search
+        </li>
+        <li>
+            submit
+        </li>
+        <li>
+            tel
+        </li>
+        <li>
+            text
+        </li>
+        <li>
+            time
+        </li>
+        <li>
+            url
+        </li>
+        <li>
+            week
+        </li>
+    </ul>
+</body>
+</html>
