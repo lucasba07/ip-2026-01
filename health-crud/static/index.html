@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health CRUD - Gestão de Pacientes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/index.style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthCare CRUD - Gestão de Pacientes</title>
+  <link rel="stylesheet" href="/styles/index.style.css">
 </head>
 <body>
-    <div class="background-decor decor-1"></div>
-    <div class="background-decor decor-2"></div>
-    <div class="container fade-in">
-        <header>
-            <div class="logo-icon">🏥</div>
-            <h1>Sistema de Gestão de Pacientes</h1>
-            <p>Bem-vindo ao painel do Health CRUD. Escolha uma operação abaixo.</p>
-        </header>
-        <div class="card-grid">
-            <a href="/forms/createPatient.html" class="card card-create">
-                <div class="card-icon">➕</div>
-                <h2>Cadastrar Paciente</h2>
-                <p>Registre um novo paciente no sistema.</p>
-            </a>
-            <a href="/forms/searchPatient.html" class="card card-search">
-                <div class="card-icon">🔍</div>
-                <h2>Buscar Paciente</h2>
-                <p>Encontre e visualize os dados por CPF.</p>
-            </a>
-            <a href="/forms/updatePatient.html" class="card card-update">
-                <div class="card-icon">✏️</div>
-                <h2>Atualizar Paciente</h2>
-                <p>Modifique os registros existentes por CPF.</p>
-            </a>
-            <a href="/forms/deletePatient.html" class="card card-delete">
-                <div class="card-icon">🗑️</div>
-                <h2>Excluir Paciente</h2>
-                <p>Remova o registro de um paciente do sistema.</p>
-            </a>
-        </div>
+  <header class="app-header">
+    <div class="brand-block">
+      <span class="brand-icon">✚</span>
+      <div>
+        <p class="brand-name">HealthCare CRUD</p>
+        <p class="brand-label">Sistema de Gestão de Pacientes</p>
+      </div>
     </div>
+    <p class="header-note">Sistema de Gestão de Pacientes</p>
+  </header>
+
+  <main class="page-shell">
+    <section class="card-page">
+      <div class="card-intro">
+        <p class="eyebrow">Painel de operações</p>
+        <h1>Gestão de Pacientes</h1>
+        <p class="description">Selecione uma operação para continuar</p>
+      </div>
+
+      <div class="action-grid">
+        <a href="/forms/createPatient.html" class="action-card">
+          <div class="action-icon">➕</div>
+          <h2>Cadastrar Paciente</h2>
+          <p>Registre um novo paciente no sistema.</p>
+        </a>
+        <a href="/forms/searchPatient.html" class="action-card">
+          <div class="action-icon">🔍</div>
+          <h2>Buscar Paciente</h2>
+          <p>Encontre e visualize os dados por CPF.</p>
+        </a>
+        <a href="/forms/updatePatient.html" class="action-card">
+          <div class="action-icon">✏️</div>
+          <h2>Atualizar Paciente</h2>
+          <p>Modifique os registros existentes por CPF.</p>
+        </a>
+        <a href="/forms/deletePatient.html" class="action-card delete-card">
+          <div class="action-icon">🗑️</div>
+          <h2>Remover Paciente</h2>
+          <p>Remova um paciente do sistema com segurança.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">© 2025 HealthCare CRUD · Projeto Acadêmico</footer>
 </body>
 </html>
